@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .background-image {
-    background-image: url('/assets/images/home-background.png'); /* Assuming you have a background image */
+    background-image: url('./assets/images/home-background.png');
     background-size: cover;
     background-position: center;
     height: 100vh; /* Adjust height as needed */
