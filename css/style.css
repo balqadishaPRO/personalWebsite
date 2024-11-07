@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #14213D;
@@ -31,7 +37,7 @@ p, ul {
 }
 
 .background-image {
-    position: relative; /* Essential for positioning the pseudo-element */
+    position: relative;
     background-image: url('/assets/images/home-background.png');
     background-size: cover;
     background-position: center;
@@ -41,7 +47,9 @@ p, ul {
     display: flex;
     align-items: end;
     margin-bottom: 0;
+    box-shadow: 0 36px 8px rgba(0, 0, 0, 0.3); /* Horizontal offset, vertical offset, blur radius, shadow color */
 }
+
 
 .background-image::before {
     content: ""; /* Required for the pseudo-element to show */
@@ -105,4 +113,24 @@ p, ul {
     border-top: 20vh solid rgba(0, 0, 0, 0.5); /* Semi-transparent black for shadow effect */
     filter: blur(10px); /* Adds a blur effect to the shadow */
     z-index: -1; /* Puts the shadow behind the triangle */
+}
+
+#loremTag{
+    padding-top: 15vh;
+}
+
+#lorem{
+    font-size: 150%;
+}
+
+.custom-size {
+    max-width: 50%; /* or any percentage or pixel value you prefer */
+    height: auto;   /* maintains the aspect ratio */
+}
+
+#snippet {
+    padding-top: 7%;
+    max-width: 40%; /* Adjusts the width */
+    height: auto; /* Maintains aspect ratio */
+    margin-left: 10%; /* Moves the image to the right */
 }

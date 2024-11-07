@@ -64,9 +64,12 @@
 
     <section class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
-                <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga esse laborum quia repellendus aspernatur laboriosam quaerat amet voluptatem aliquid perferendis dicta voluptas saepe ea in, officiis, cum rem eaque nemo.</p>
+            <div class="col-md-6"> <!-- Assign half the width to the text column -->
+                <h1 class="header" id="loremTag">About Me</h1>
+                <p class="text" id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga esse laborum quia repellendus aspernatur laboriosam quaerat amet voluptatem aliquid perferendis dicta voluptas saepe ea in, officiis, cum rem eaque nemo.</p>
+            </div>
+            <div class="col-md-6" id="snippet"> <!-- Assign the other half to the image column -->
+                <img src="./assets/images/snipp.png" class="img-fluid custom-size" alt="not supported">
             </div>
         </div>
     </section>
@@ -74,10 +77,10 @@
     <section class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h1>Skills</h1>
+                <h1 class="header">Skills</h1>
             </div>
             <div class="col-md-6">
-                <h3>Technical Skills</h3>
+                <h3 class="text" id="lorem">Technical Skills</h3>
                 <ul>
                     <li>C/C++</li>
                     <li>Java</li>
@@ -102,7 +105,7 @@
     <section class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h1>My Projects</h1>
+                <h1 class="header">My Projects</h1>
                 <div>
                     <img src="./assets/images/Cropped_Image.png" class="img-fluid" alt="Not supported">
                 </div>
@@ -126,7 +129,7 @@
     <section class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h1>Contact Me</h1>
+                <h1 class="header">Contact Me</h1>
                 <!-- Contact form or details -->
                 <form>
                     <div class="form-group">
